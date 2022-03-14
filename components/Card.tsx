@@ -28,7 +28,7 @@ const Card: FC<CardProps> = ({ style, icon, children, ...rest }) => {
 
   return (
     <div style={combinedStyles} {...rest}>
-      {icon}
+      {icon && <div>{icon}</div>}
       {icon ? <div>{children}</div> : children}
     </div>
   );
