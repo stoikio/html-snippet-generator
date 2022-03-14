@@ -19,14 +19,14 @@ const Index: NextPage<IndexProps> = () => {
   return (
     <>
       <Head>
-        <title>Webflow snippet generator | Stoïk</title>
+        <title>HTML snippet generator | Stoïk</title>
       </Head>
       <div className="h-screen overflow-hidden flex flex-col md:flex-row">
         <div className="bg-gray-100 overflow-auto py-4 border-r border-gray-200 md:w-[300px] lg:w-[400px] px-8 space-y-2">
           <div className="font-semibold text-xl py-5 text-gray-700">
             <div className="flex flex-col items-center">
               <div className="text-center">
-                <span className="bg-gradient-to-tr from-blue-500 to-indigo-500 text-white px-2 py-1 rounded font-medium">webflow</span> snippet generator
+                <span className="bg-gradient-to-tr from-blue-500 to-indigo-500 text-white px-2 py-1 tracking-wide rounded font-black">HTML</span> snippet generator
               </div>
               <div className="text-sm font-normal text-gray-500 mt-1">by stoïk</div>
             </div>
