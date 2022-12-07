@@ -3,6 +3,7 @@ export type SnippetProps = {
   text: string;
   buttonText?: string;
   buttonHref?: string;
+  buttonId?: string;
 };
 
 export type IconProps = JSX.IntrinsicElements["svg"] & {

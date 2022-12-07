@@ -15,6 +15,7 @@ const Index: NextPage<IndexProps> = () => {
   const [text, setText] = useState("Introduction Lorem ipsum dolor sit amet. Et commodi rerum quo sint aspernatur quo deleniti dolores et voluptatum asperiores non doloribus consectetur!");
   const [buttonText, setButtonText] = useState("Tester mon risque");
   const [buttonHref, setButtonHref] = useState("https://stoik.io");
+  const [buttonId, setButtonId] = useState("");
 
   return (
     <>
@@ -47,6 +48,12 @@ const Index: NextPage<IndexProps> = () => {
             <div className="font-medium">Lien du bouton</div>
             <Input type="text" value={buttonHref} onChange={(e) => setButtonHref(e.target.value)} />
           </div>
+          <div>
+            <div className="font-medium">
+              Balise <pre className="inline-block bg-gray-200 px-2 rounded m-2 text-sm">id</pre> du bouton
+            </div>
+            <Input placeholder="Optionnel" type="text" value={buttonId} onChange={(e) => setButtonId(e.target.value)} />
+          </div>
         </div>
         <div className="overflow-auto p-10 flex-1">
           <div className="space-y-5 flex flex-col items-center">
@@ -58,7 +65,7 @@ const Index: NextPage<IndexProps> = () => {
               <LeSaviezVous title={title} text={text} />
             </SnippetWrapper>
             <SnippetWrapper>
-              <CTA title={title} text={text} buttonText={buttonText} buttonHref={buttonHref} />
+              <CTA title={title} text={text} buttonText={buttonText} buttonHref={buttonHref} buttonId={buttonId} />
             </SnippetWrapper>
           </div>
         </div>

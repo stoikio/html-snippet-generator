@@ -9,7 +9,7 @@ import { FC } from "react";
 import { SnippetProps } from "types";
 import { useId } from "utils";
 
-const CTA: FC<SnippetProps> = ({ title, text, buttonText, buttonHref }) => {
+const CTA: FC<SnippetProps> = ({ title, text, buttonText, buttonHref, buttonId }) => {
   const id = useId();
 
   return (
@@ -40,7 +40,7 @@ const CTA: FC<SnippetProps> = ({ title, text, buttonText, buttonHref }) => {
           <Text>{text}</Text>
         </div>
         <div style={{ flexShrink: 0 }}>
-          <Button href={buttonHref}>
+          <Button href={buttonHref} id={buttonId?.trim() || undefined}>
             {buttonText} <ArrowRightIcon style={{ width: "1.2em", marginLeft: "8px" }} color={colors.white} />
           </Button>
         </div>
