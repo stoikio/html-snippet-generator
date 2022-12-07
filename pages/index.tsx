@@ -50,7 +50,7 @@ const Index: NextPage<IndexProps> = () => {
           </div>
           <div>
             <div className="font-medium">
-              Balise <pre className="inline-block bg-gray-200 px-2 rounded m-2 text-sm">id</pre> du bouton
+              Balise <pre className="inline-block bg-gray-300 px-1 rounded m-1 text-sm">id</pre> du bouton
             </div>
             <Input placeholder="Optionnel" type="text" value={buttonId} onChange={(e) => setButtonId(e.target.value)} />
           </div>
